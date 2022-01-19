@@ -6,3 +6,5 @@ __pycache__/
 directories.py
 json/
 maps/
+map.py
+speedtest.db
