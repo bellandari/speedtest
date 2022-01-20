@@ -1,3 +1,4 @@
+# Needed libraries
 import speedtest
 import json
 import time
@@ -8,7 +9,6 @@ import folium
 
 # This Python scripts conducts a speedtest of the internet. 
 # It takes the result and stores it in a database, prints the results to console, and makes a map.
-
 
 # This function is the actual test. 
 def test():
@@ -112,5 +112,6 @@ def mapcreation(lat, lon, dread, uread, pread, timestr):
     map.save(completemap)
     
     print('Map created.')
-        
+    
+# Calls the first function which starts the script        
 test()
