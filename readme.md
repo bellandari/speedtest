@@ -1,11 +1,7 @@
 ## SpeedTest
 
-This is a speed test script I wrote more for the learning experience. 
+This is a speedtest script I'm currently working on to help learn Python and related libraries. 
 
-It uses Folium to generate maps that show where the server used is located. Other than for visual representation, the map isn't much use. 
+Currently the script runs the test, and then takes all defined variables and uploads them to a database, in this case 'speedtest.db'
 
-The script will create a JSON file with all the testing information. My plan is to use these JSON files in order to track internet speed trends for my system over the course of a few months. I'll probably upload this script to a Raspberry Pi and have it auto run a few times a day. 
-
-Maybe. 
-
-I don't know. Doing things to learn, really. 
+More to come later. 
