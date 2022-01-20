@@ -3,9 +3,6 @@ import speedtest
 import json
 import time
 import sqlite3
-import directories
-import os
-import folium
 
 # This Python scripts conducts a speedtest of the internet. 
 # It takes the result and stores it in a database, prints the results to console, and makes a map.
@@ -55,17 +52,6 @@ def information(intel, download, upload, ping):
     sponsor = intel['sponsor']
     timestr = time.strftime("%Y%m%d-%H%M%S")
     
-    # Readfile is for a not yet created function.
-    readfile = (f'Download: {dread}\n\
-    Upload: {uread}\n\
-    Ping: {pread}\n\
-    D: {d}\n\
-    Host: {host}\n\
-    Lattitude: {lat}\n\
-    Longitude:{lon}\n\
-    Name: {name}\n\
-    Sponsor: {sponsor}')
-
     # Prints the information for the user to see in console. 
     print(f'Download Speed: {dread}')
     print(f'Upload Speed: {uread}')
@@ -74,7 +60,6 @@ def information(intel, download, upload, ping):
         
     # Sends the relevant information to the next functions.     
     dbinput(dread, uread, pread, d, host, lat, lon, name, sponsor, timestr)
-    mapcreation(lat, lon, dread, uread, pread, timestr)
     
 # This function takes the passed information and uploads it to a database for future reference.     
 def dbinput(dread, uread, pread, d, host, lat, lon, name, sponsor, timestr):
@@ -93,25 +78,6 @@ def dbinput(dread, uread, pread, d, host, lat, lon, name, sponsor, timestr):
         connection.commit()    
         
     print("DB Publish complete.")  
-   
-def mapcreation(lat, lon, dread, uread, pread, timestr): 
-      
-    # Uses a hidden directory file to tell the script where to put the map and what to call it  
-    completemap = os.path.join(directories.directory, timestr+'.html') 
-    
-    # Coordinates passed from a previous function for the map
-    coordinates = (lat, lon)
 
-    # Map configuration, makes popup with results
-    map = folium.Map(coordinates, zoom_start=15)
-    overall = (f"Download: {dread} / Upload: {uread} / Ping: {pread}")
-    popup = folium.Popup(overall, max_width=400,min_width=100)
-    folium.Marker(coordinates, popup = popup).add_to(map)
-
-    # Saves map as html file in the maps folder
-    map.save(completemap)
-    
-    print('Map created.')
-    
 # Calls the first function which starts the script        
 test()

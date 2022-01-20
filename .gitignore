@@ -8,3 +8,4 @@ json/
 maps/
 map.py
 speedtest.db
+speedcomplete.py
