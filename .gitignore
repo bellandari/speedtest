@@ -9,3 +9,5 @@ maps/
 map.py
 speedtest.db
 speedcomplete.py
+todo.md
+viewdb.py
