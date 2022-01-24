@@ -16,12 +16,12 @@ The addition of folium allows a map to be displayed via the webbrowser library. 
 
 ## Screenshots
 
-![image]('/screenshots/mainmenu.png)
-![image]('/screenshots/testcompletion.png)
-![image]('/screenshots/database.png)
-![image]('/screenshots/search.png)
-![image]('/screenshots/tagsearch.png)
-![image]('/screenshots/map.png)
+![image]('/screenshots/mainmenu.png')
+![image]('/screenshots/testcompletion.png')
+![image]('/screenshots/database.png')
+![image]('/screenshots/search.png')
+![image]('/screenshots/tagsearch.png')
+![image]('/screenshots/map.png')
 
 ## Problems
 I'm sure there are several issues in the code but at the moment there's really only one that bothers me. 
