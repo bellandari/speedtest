@@ -16,7 +16,7 @@ The addition of folium allows a map to be displayed via the webbrowser library. 
 
 ## Screenshots
 
-![image]('/screenshots/mainmenu.png')
+![image](mainmenu.png)
 ![image]('/screenshots/testcompletion.png')
 ![image]('/screenshots/database.png')
 ![image]('/screenshots/search.png')
