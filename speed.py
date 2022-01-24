@@ -37,7 +37,7 @@ while True:
             search()
 
         else:
-            exit        
+            sys.exit()        
 
     # The core speedtest function.     
     def test():
@@ -183,7 +183,7 @@ while True:
             mainmenu()
             
         else:
-            exit         
+            sys.exit()         
     
     # Search Menu & Options        
     def search():
