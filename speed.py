@@ -19,7 +19,7 @@ while True:
         # Clears the terminal for a cleaner look.
         os.system('cls||clear')
 
-        print("\n     Welcome to the Makubex Speedtest Program.\n")
+        print("\n     Welcome to the Hollowlake Speedtest Program.\n")
         print("     Main Menu:\n")
         print("          1. Run Speedtest")
         print("          2. Search Database")
