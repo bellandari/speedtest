@@ -4,13 +4,7 @@ __pycache__/
 
 # My Files
 directories.py
-json/
-maps/
-map.py
 speedtest.db
 speedcomplete.py
-speedtest
-requirements.txt
-dist
-build
-speed.spec
+poetry.lock
+pyproject.toml
