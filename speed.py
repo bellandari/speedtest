@@ -70,7 +70,16 @@ while True:
         print(f'     Upload Speed: {uread}')
         print(f'     Ping: {pread}\n') 
         
+        table()
         createtag(best, dread, uread, pread)
+
+
+    def table():
+        
+        with connect as connection:
+            
+            cursor.execute('''CREATE TABLE IF NOT EXISTS results (tag, download, upload, ping, d, host, lat, lon, name, sponsor, date, time)''')
+            connection.commit()    
 
     # Creates a unique ID tag for each test to be used in future lookups. 
     def createtag(best, dread, uread, pread):
@@ -109,6 +118,8 @@ while True:
         # Pushes the information to the database    
         with connect as connection:
             
+            cursor.execute('''CREATE TABLE IF NOT EXISTS results (tag, download, upload, ping, d, host, lat, lon, name, sponsor, date, time)''')
+           
             cursor.execute(insertQuery, [tag, dread, uread, pread, best['d'], best['host'], best['lat'], best['lon'], best['name'], best['sponsor'], date, timestr])
             connection.commit()    
             

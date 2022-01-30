@@ -9,6 +9,8 @@ maps/
 map.py
 speedtest.db
 speedcomplete.py
-todo.md
-viewdb.py
 speedtest
+requirements.txt
+dist
+build
+speed.spec
