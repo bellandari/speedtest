@@ -8,10 +8,10 @@ This is an internet speedtest program with a few added features just for "cool" 
 ### Extra Features
 At the core, this is just a speedtest program. However, to give myself more coding practice I decided to add a few additional features. 
 
-- Database
+- Database: 
 A database was added using sqlite3 to store the information returned during the speedtest. This information can be accessed by the program to pull up old test results. 
 
-- Folium Maps
+- Folium Maps: 
 The addition of folium allows a map to be displayed via the webbrowser library. When the database is queried, the user has the option of launching a map for a more "graphical" interface. 
 
 ## Screenshots
