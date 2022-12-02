@@ -1,4 +1,4 @@
-# Hollowlake SpeedTest
+# Bellandari SpeedTest
 
 ## Application Details
 
